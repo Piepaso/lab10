@@ -19,6 +19,8 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.1")
+
+    implementation("com.google.guava");
 }
 
 val mainClass: String by project
