@@ -1,7 +1,7 @@
 plugins {
     java
     application
-    id("org.danilopianini.gradle-java-qa") version "1.25.0"
+    id("org.danilopianini.gradle-java-qa") version "0.40.0"
 }
 
 tasks.javadoc {
@@ -10,7 +10,6 @@ tasks.javadoc {
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -20,7 +19,9 @@ dependencies {
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.1")
 
-    implementation("com.google.guava");
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation("com.google.guava:guava:32.1.3-jre")
+
 }
 
 val mainClass: String by project
